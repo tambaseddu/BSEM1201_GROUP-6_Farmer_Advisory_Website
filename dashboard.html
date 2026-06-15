@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard - Farm Advisory System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dashboard-body">
+
+    <nav class="navbar dashboard-nav">
+        <div class="logo">
+            <i class="fas fa-leaf"></i> Farm Advisory Portal
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">View Site</a></li>
+            <li><a href="login.html" id="logoutBtn" class="logout-link"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="dashboard-wrapper">
+        
+        <aside class="sidebar">
+            <div class="user-profile-summary">
+                <div class="avatar-circle"><i class="fas fa-user-farmer"></i></div>
+                <h4 id="sidebarFarmerName">Farmer Account</h4>
+                <span class="badge-premium">Verified Member</span>
+            </div>
+            <ul class="sidebar-links">
+                <li class="active"><a href="#"><i class="fas fa-chart-pie"></i> Overview</a></li>
+                <li><a href="crops.html"><i class="fas fa-seedling"></i> My Crops</a></li>
+                <li><a href="livestock.html"><i class="fas fa-cow"></i> My Livestock</a></li>
+                <li><a href="weather.html"><i class="fas fa-cloud-sun"></i> Weather Alerts</a></li>
+                <li><a href="market.html"><i class="fas fa-chart-line"></i> Market Monitor</a></li>
+                <li><a href="pests.html"><i class="fas fa-bug"></i> Pest Reports</a></li>
+                <li><a href="contact.html"><i class="fas fa-headset"></i> Support Desk</a></li>
+            </ul>
+        </aside>
+
+        <main class="dashboard-content">
+            
+            <div class="content-header">
+                <div>
+                    <h1 id="welcomeMessage">Welcome back, Farmer!</h1>
+                    <p class="subtitle">Here is the latest overview for your agricultural fields today.</p>
+                </div>
+                <div class="live-date-badge">
+                    <i class="fas fa-calendar-day"></i> <span id="currentDate">June 2026</span>
+                </div>
+            </div>
+
+            <div class="metrics-row">
+                <div class="metric-box">
+                    <div class="metric-icon c-green"><i class="fas fa-seedling"></i></div>
+                    <div class="metric-info">
+                        <h3>3 Active</h3>
+                        <p>Monitored Crops</p>
+                    </div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-icon c-orange"><i class="fas fa-cow"></i></div>
+                    <div class="metric-info">
+                        <h3>42 Head</h3>
+                        <p>Livestock Tracked</p>
+                    </div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-icon c-blue"><i class="fas fa-cloud-showers-heavy"></i></div>
+                    <div class="metric-info">
+                        <h3>85%</h3>
+                        <p>Rain Probability</p>
+                    </div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-icon c-purple"><i class="fas fa-wallet"></i></div>
+                    <div class="metric-info">
+                        <h3>+4.2%</h3>
+                        <p>Market Trend</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-layout-grid">
+                
+                <div class="dashboard-main-cards">
+                    <h2>Quick Actions & Utilities</h2>
+                    <div class="cards-inner-grid">
+                        
+                        <div class="dashboard-card">
+                            <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                            <h3>Crop Advisory</h3>
+                            <p>View soil testing recommendations, harvesting timelines, and seasonal yield optimizations.</p>
+                            <a href="crops.html" class="btn-card-action">View Crop Schedule</a>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <div class="card-icon"><i class="fas fa-cow"></i></div>
+                            <h3>Livestock Advisory</h3>
+                            <p>Track biological vaccination data logs, feed calculations, and livestock tracking updates.</p>
+                            <a href="livestock.html" class="btn-card-action">Manage Herds</a>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <div class="card-icon"><i class="fas fa-cloud-sun"></i></div>
+                            <h3>Weather Forecast</h3>
+                            <p>Review hyper-local rainfall accumulation stats, temperature maps, and micro-climate wind directions.</p>
+                            <a href="weather.html" class="btn-card-action">Open Full Forecast</a>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3>Market Prices</h3>
+                            <p>Analyze regional agricultural wholesale markets index listings to identify selling opportunities.</p>
+                            <a href="market.html" class="btn-card-action">Analyze Pricing Index</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="dashboard-feed-panel">
+                    
+                    <div class="feed-box alerts-box">
+                        <h3><i class="fas fa-bell"></i> Critical Advisory Updates</h3>
+                        <div class="feed-item critical">
+                            <span class="feed-time">Urgent</span>
+                            <p><strong>Heavy Rain Warning:</strong> Move vulnerable sheep away from lower flood zone pathways within 12 hours.</p>
+                        </div>
+                        <div class="feed-item alert">
+                            <span class="feed-time">Notice</span>
+                            <p><strong>Market Spike:</strong> Local wholesale Maize pricing increased 6% over last night's session.</p>
+                        </div>
+                    </div>
+
+                    <div class="feed-box activity-box">
+                        <h3><i class="fas fa-history"></i> Recent Activity Logs</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle text-success"></i> Updated field rotation records for Field B.</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Checked current Rice wholesale valuation.</li>
+                            <li><i class="fas fa-syringe text-info"></i> Logged Poultry vaccination tracking index entries.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
